@@ -1,0 +1,418 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Trebuchet MS;
+}
+
+body{
+
+    background-image:url("WEB.jpg");
+    height:100vh;
+    background-size:cover;
+    background-position:center;
+}
+
+.menu ul{
+
+    display:flex;
+}
+
+
+.menu ul li{
+
+    list-style:none;
+    margin:12px;
+    padding:13px;
+    
+
+}
+
+.menu ul li a{
+
+    color:white;
+    text-decoration:none;
+    cursor:pointer;
+    border-bottom:2px solid cyan;
+    font-weight:500;
+    transition: 0.4s;
+    padding:2px;
+   font-family: Trebuchet MS;
+    
+
+}
+
+.menu ul li a:hover{
+
+    background-color:cyan;
+    color:black;
+    border:2px solid cyan;
+    padding:5px;
+    border-radius:20px;
+    font-weight:500;
+    box-shadow: 0 0 10px cyan, 0 0 80px cyan, 0 0 110px cyan;
+
+}
+
+.logo img{
+
+    
+    position: absolute;
+    bottom:45%;
+    left:73%;
+    height:150px;
+    width:230px;
+
+
+}
+
+.heading h1{
+
+color:white;
+margin-left:27px;
+margin-top:50px;
+font-size:48px;
+letter-spacing:1px;
+text-shadow:2px 2px 8px black;
+}
+
+.heading p{
+
+color:lightgrey;
+margin-left:27px;
+margin-top:20px;
+font-size:16px;
+Font-family:sans-serif;
+word-spacing:2px;
+opacity:0.7;
+text-shadow:2px 2px 8px black;
+
+}
+
+span{
+    color:RED;
+}
+
+.menu ul li a.active{
+
+    color:cyan;
+}
+    
+.menu ul li a.active:hover{
+
+    color:black;
+}
+
+.btn{
+
+    position: absolute;
+    top:3%;
+    left:93%;
+    
+
+}
+
+.btn a{
+
+    color:white;
+    text-decoration:none;
+    cursor:pointer;
+    border-bottom:2px solid red;
+    font-weight:500;
+    transition: 0.4s;
+    padding:3px;
+    font-family: Trebuchet MS;
+
+}
+
+.btn a:hover{
+
+    background-color:red;
+    color:white;
+    border:2px solid red;
+    padding:5px;
+    border-radius:20px;
+    font-weight:500;
+    box-shadow: 0 0 10px red, 0 0 80px red, 0 0 110px red;
+
+    
+}
+
+.network{
+
+    position: absolute;
+    left:70%;
+}
+
+.network h1{
+
+    color:white;
+}
+
+.network p{
+
+    color:grey;
+    position: relative;
+
+
+}
+
+.container{
+
+    height:270px;
+    width:320px;
+    background-color:rgba(260,260,260,0.08);
+    position: absolute;
+    left:74%;
+    bottom:21px;
+    box-shadow:1px 1px 15px black;
+    border-radius: 25px;
+    transition: 0.5s;
+    
+}
+
+.container:hover{
+
+
+box-shadow: 0 0 10px cyan,0 0 50px cyan;
+}
+
+.container p{
+      
+    color:white;
+    text-shadow:1px 1px 5px black;
+}
+
+.container p a{
+
+    color:yellow;
+}
+
+.container p a:hover{
+
+    color:cyan;
+}
+
+.container:before{
+
+    content:'';
+    width:50%;
+    height:100%;
+    background-color: rgba(260,260,260,0.05);
+    position: absolute;
+    pointer-events: none;
+    border-radius: 25px;
+}
+
+
+
+.login{
+
+    margin:40px;
+    z-index:1;
+}
+
+.login h1{
+
+    color:white;
+    font-size:38px;
+    text-shadow:1px 1px 5px black;
+    text-align: center;
+}
+
+.inputbox{
+
+width:100%;
+margin-top:15px;
+
+}
+
+.inputbox input{
+
+    background:transparent;
+    border:none;
+    border-bottom:2px solid white;
+    color:YELLOW;
+    outline:none;
+    width:100%;
+    padding:4px;
+
+}
+
+
+.sub-btn input[type="submit"]{
+
+
+    background-color: white;
+    color:black;
+    cursor:pointer;
+    width:100%;
+    font-weight:1000;
+    border:none;
+    padding:3px;
+    transition: 0.5s;
+}
+
+.sub-btn input[type="submit"]:hover{
+
+    background-color: yellow;
+    color:black;
+    box-shadow: 0 0 20px yellow,0 0 60px yellow;
+    
+}
+
+
+
+::placeholder{
+
+    font-size:15px;
+
+    color:CYAN;
+}
+
+
+.card{
+
+    position: absolute;
+    left:2%;
+    perspective:500px;
+    top:49%;
+    height:320px;
+    width:210px;
+}
+
+.card .front{
+      
+    position: absolute;
+    transform:rotateX(0deg);
+    transition:0.6s;
+}
+
+.front img{
+
+    height:320px;
+    width:210px;
+}
+
+.card .back{
+      
+    position: absolute;
+    height:100%;
+    width:100%;
+    background-color:black;
+    backface-visibility:hidden;
+    transform:rotateX(180deg);
+    transition:0.6s;
+   
+}
+
+.card .back:before
+{
+    content:"";
+    position: absolute;
+    width:50%;
+    height:100%;
+    background-color: rgba(260,260,260,0.1);
+    
+}
+
+.card:hover .front{
+
+    transform:rotateX(-180deg);
+}
+
+.card:hover .back{
+
+    transform:rotateX(0deg);
+}
+
+
+.details {  
+
+    position: relative;
+    top:30%;
+    left:4%;
+    width:210;
+    padding:20px;
+    text-align: center;
+}
+
+.details h1{
+
+    color:white;
+    font-size:25px;
+    position: absolute;
+    t/op:10px;
+}
+
+.details p{
+
+    color:grey;
+    font-size:15px;
+    position: absolute;;
+    top:60px;
+}
+
+ .icons{
+
+padding:10px 0px;
+font-size:15px;
+top:80px;
+left:30px;
+position: absolute;
+}
+
+.icons a{
+
+display:inline-block;
+width:30px;
+height:30px;
+color:white;
+background-color: #262626;
+text-align:center;
+border-radius: 50%;
+transition:0.5s;
+
+}
+
+.icons a .fa{
+
+    line-height:30px;
+}
+
+.icons a:hover {
+
+    color:white;
+    background-color: red;
+}
+
+
+.btn2{
+    position: absolute;
+    bottom:40px;
+    left:64px;
+}
+
+.btn2 a{
+
+    text-decoration: none;
+    color:black;
+    border:2px solid cyan;
+    padding:5px;
+    background-color: cyan;
+    transition:0.5s;
+    border-radius: 25px;
+    
+    
+}
+
+.btn2 a:hover{
+
+    text-decoration: none;
+    color:black;
+    border:2px solid cyan;
+    padding:5px;
+    box-shadow:0 0 20px cyan, 0 0 60px cyan;
+    
+}
+
+
